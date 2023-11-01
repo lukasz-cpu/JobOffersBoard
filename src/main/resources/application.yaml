@@ -1,0 +1,19 @@
+server:
+  port: 8081
+
+spring:
+  jpa:
+    show-sql: false
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: create
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    platform: postgres
+    url: 'jdbc:postgresql://localhost:5432/jobs'
+    username: 'postgres'
+    password: 'postgres'
+    driverClassName: org.postgresql.Driver
+
+job:
+  word: 'Java'
