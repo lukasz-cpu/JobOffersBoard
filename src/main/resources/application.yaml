@@ -6,7 +6,7 @@ spring:
     show-sql: false
     database: POSTGRESQL
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
       dialect: org.hibernate.dialect.PostgreSQLDialect
   datasource:
     platform: postgres
@@ -16,4 +16,4 @@ spring:
     driverClassName: org.postgresql.Driver
 
 job:
-  word: 'Java'
+  word: 'React'

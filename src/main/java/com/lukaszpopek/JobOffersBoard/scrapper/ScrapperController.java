@@ -77,7 +77,6 @@ public class ScrapperController {
         scrappingService.saveJobOffer(link, doc);
       } catch (Exception ex) {
         log.error("Exception during processing link: {}", link);
-        throw new RuntimeException("asd");
       }
     }
 
@@ -87,11 +86,7 @@ public class ScrapperController {
   @GetMapping("/loadLinks")
   public ResponseEntity<?> loadLinks() throws InterruptedException {
 
-    List<String> allLinks =
-        List.of("https://nofluffjobs.com/job/remote-java-developer-link-group-4",
-            "https://nofluffjobs.com/job/java-developer-ifirma-wroclaw-2",
-            "https://nofluffjobs.com/job/senior-java-developer-ework-group-warsaw-4"
-        );
+    List<String> allLinks = getAllLinks();
 
     for (String singleLink : allLinks) {
 
