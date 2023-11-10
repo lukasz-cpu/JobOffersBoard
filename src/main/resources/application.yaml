@@ -16,4 +16,4 @@ spring:
     driverClassName: org.postgresql.Driver
 
 job:
-  word: 'AWS'
+  word: 'Python'
